@@ -1,6 +1,6 @@
-# pypi-proxy
+# pypi-auth-test-proxy
 
-A simple reverse proxy for the [official Python package index](https://pypi.org).
+A simple reverse proxy for the [official Python package index](https://pypi.org) with various authentication patterns. This project is used to test package manager credential handling.
 
 ## Unauthenticated
 
@@ -28,8 +28,8 @@ proxies at `https://pypi-proxy.fly.dev/basic-auth-heron/` and
 Build and run the image:
 
 ```
-docker build -t pypi-proxy .
-docker run --rm -p 80:8080 -i pypi-proxy
+docker build -t pypi-auth-test-proxy .
+docker run --rm -p 80:8080 -i pypi-auth-test-proxy
 ```
 
 Use `localhost` instead of the deployed domain name to test.
